@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Rastan</title>
+
+        <!-- Links -->
+        <link rel="stylesheet" href="assets/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
+    </head>
+    <body>
+        <!-- Cart btn -->
+         <div class="cart-fixed-btn">
+            <div class="cart position-relative" data-bs-toggle="modal" data-bs-target="#foodModal">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class=" cart_item-count d-flex text-white justify-content-center align-items-center rounded-circle position-absolute">06</span>
+            </div>
+         </div>
+        <!-- Header Start  -->
+
+        <header class="header">
+            <div class="container bg-white rounded-4">
+                <div class="header-content d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="logo order-1 order-lg-1">
+                        <a href="#">
+                            <img class="w-100 img-fluid" src="assets/images/logo1.png" alt="logo-img" style="max-width: 160px;" />
+                        </a>
+                    </div>
+                    <div class="list order-3 order-lg-2" id="menu-list">
+                        <ul class="list-unstyled d-flex mb-0">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Set menu</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="action order-2 order-lg-3 d-flex align-items-center">
+                        <div class="cart position-relative" data-bs-toggle="modal" data-bs-target="#foodModal">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart_item-count  d-flex text-white justify-content-center align-items-center rounded-circle position-absolute">06</span>
+                        </div>
+                        <div class="menu-toggle" id="menu-toggle">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Header End  -->
+
+        <!-- Banner Start  -->
+
+        <section class="banner position-relative" style="background-image: url(assets/images/bg-logo.png);">
+            <div class="container">
+                <div class="col-lg-6 m-auto">
+                    <div class="banner-text text-end">
+                        <h1 class="text-white">RESTAN</h1>
+                        <p class="text-uppercase text-white d-inline-flex d-flex justify-content-center align-items-center">Restaurant</p>
+                        <span class="d-block text-white position-relative">Book your table now</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner End -->
+
+        <!-- About Start  -->
+
+        <section class="about section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="image-section position-relative text-center">
+                            <img src="assets/images/about.png" alt="image" />
+                            <img src="assets/images/behind-about-image.png" alt="behind-image" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content mt-4 mt-lg-0">
+                            <div class="section-title">
+                                <h2>
+                                    Best food ideas & <br />
+                                    traditions in the world
+                                </h2>
+                            </div>
+
+                            <div class="about-details">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="details">
+                                            <p>
+                                                Codulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties
+                                                but why she shewing. She sang know now.
+                                            </p>
+                                            <a class="d-inline-flex justify-content-center align-items-center text-white text-uppercase text-decoration-none" href="#">explore Menu</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="food-table mt-4 mt-lg-0 position-relative">
+                                            <ul class="m-0 list-unstyled text-white">
+                                                <li>
+                                                    <h4 class="text-white">Breakfast</h4>
+                                                    <p>Reservations for every day from 07am to 11.30am</p>
+                                                </li>
+                                                <li>
+                                                    <h4 class="text-white">Lunch</h4>
+                                                    <p>Reservations for every day from 12pm to 1.30pm</p>
+                                                </li>
+                                                <li>
+                                                    <h4 class="text-white">Dinner</h4>
+                                                    <p>Reservations for every day from 6pm to 8.45pm</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About End -->
+
+        <!--  Specials Menu Start-->
+
+        <section class="special-menu section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="text-center">Our Specials Menu</h2>
+                </div>
+                <div class="menu-list d-flex justify-content-center mb-5">
+                    <ul id="category_list" class="list-unstyled d-flex flex-wrap justify-content-center">
+                        <!-- keep this empty -->
+                          
+                    </ul>
+                </div>
+
+                <div class="row" id="food_gallery">
+                   <!-- keep this empty --> 
+                </div>
+            </div>
+        </section>
+
+        <!--  Specials Menu End-->
+
+        <!-- Reservation Start -->
+
+        <section class="reservation section-margin" style="background-image: url(assets/images/reservation-bg.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-area">
+                            <div class="section-title">
+                                <h2 class="text-white">Reservation Your Favorite Private Table</h2>
+                            </div>
+                            <p class="paragraph">
+                                A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a
+                                hard time forgetting.
+                            </p>
+                            <ul class="d-flex flex-wrap justify-content-between list-unstyled pt-3">
+                                <li class="mb-3 mb-lg-3">
+                                    <h5 class="text-white">Breakfast Menu</h5>
+                                    <span>125+ items</span>
+                                </li>
+                                <li class="mb-3 mb-lg-3">
+                                    <h5 class="text-white">Lunch Menu</h5>
+                                    <span>125+ items</span>
+                                </li>
+                                <li class="mb-3 mb-lg-3">
+                                    <h5 class="text-white">Dinner Menu</h5>
+                                    <span>125+ items</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form bg-white">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="Phone" placeholder="PhoneNumber" />
+                                </div>
+
+                                <select class="form-select mb-lg-3">
+                                    <option selected>1 Person</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="3">4</option>
+                                    <option value="3">5</option>
+                                    <option value="3">6</option>
+                                </select>
+
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Date" aria-label="Username" aria-describedby="basic-addon1" />
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                    </span>
+                                </div>
+
+                                <select class="form-select mb-lg-3">
+                                    <option selected>10:00 AM</option>
+                                    <option value="1">11:00 AM</option>
+                                    <option value="2">12:00 AM</option>
+                                    <option value="3">01:00 AM</option>
+                                </select>
+
+                                <button class="border-0 text-white text-uppercase" type="submit">Book a table</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Reservation End -->
+
+        <!-- Food Gallery Start -->
+
+        <div class="food-gallery section-padding">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Our Food Gallery</h2>
+                </div>
+
+                <div class="gallery-container d-grid">
+                    <div class="gallery-item position-relative">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/images/gallety-one.png" alt="img" />
+                        <div class="overlay w-100 h-100 position-absolute">
+                            <div class="overlay-content position-absolute">
+                                <h5 class="text-white">Minion Drinks</h5>
+                                <span>Cold Lemon Juice</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item position-relative">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/images/gallery-two.png" alt="img" />
+                        <div class="overlay w-100 h-100 position-absolute">
+                            <div class="overlay-content position-absolute">
+                                <h5 class="text-white">Minion Drinks</h5>
+                                <span>Cold Lemon Juice</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item position-relative">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/images/three.png" alt="img" />
+                        <div class="overlay w-100 h-100 position-absolute">
+                            <div class="overlay-content position-absolute">
+                                <h5 class="text-white">Minion Drinks</h5>
+                                <span>Cold Lemon Juice</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item position-relative">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/images/four.png" alt="img" />
+                        <div class="overlay w-100 h-100 position-absolute">
+                            <div class="overlay-content position-absolute">
+                                <h5 class="text-white">Minion Drinks</h5>
+                                <span>Cold Lemon Juice</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item position-relative">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/images/five.png" alt="img" />
+                        <div class="overlay w-100 h-100 position-absolute">
+                            <div class="overlay-content position-absolute">
+                                <h5 class="text-white">Minion Drinks</h5>
+                                <span>Cold Lemon Juice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Food Gallery End -->
+
+        <!-- Footer Start  -->
+
+        <footer class="footer section-margin">
+            <div class="container">
+                <div class="footer-logo position-relative text-center z-3">
+                    <a class="d-inline-block" href="#">
+                        <img src="assets/images/footer-logo.png" alt="footer logo" />
+                    </a>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer-about">
+                            <h2 class="footer-title text-white">About Us</h2>
+                            <p>Continued at zealously necessary is Surrounded sir motionless she end literature. Gay direction neglected.</p>
+
+                            <ul class="footer-social list-unstyled d-flex">
+                                <li>
+                                    <a class="d-inline-flex justify-content-center align-items-center text-decoration-none" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a class="d-inline-flex justify-content-center align-items-center text-decoration-none" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="d-inline-flex justify-content-center align-items-center text-decoration-none" href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a class="d-inline-flex justify-content-center align-items-center text-decoration-none" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="explore">
+                            <h3 class="footer-title text-white">Explore</h3>
+
+                            <ul class="list-unstyled">
+                                <li><a class="text-decoration-none" href="#">Home</a></li>
+                                <li><a class="text-decoration-none" href="#">About</a></li>
+                                <li><a class="text-decoration-none" href="#">Contact</a></li>
+                                <li><a class="text-decoration-none" href="#">Return Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="contact-info">
+                            <h3 class="footer-title text-white">Contact Info</h3>
+
+                            <ul class="contect-info-list list-unstyled">
+                                <li class="position-relative">
+                                    <i class="fa-solid fa-location-arrow d-flex justify-content-center align-items-center"></i>
+                                    <span>Dogair Bazar, Signboard, demra, Dhaka - 1206</span>
+                                </li>
+                                <li class="position-relative">
+                                    <i class="fa-solid fa-phone d-flex justify-content-center align-items-center"></i>
+                                    <a href="tel:+8801820647468">+8801820647468</a>
+                                    <a href="tel:+8801787324492">+8801787324492</a>
+                                </li>
+
+                                <li class="position-relative">
+                                    <i class="fa-solid fa-envelope d-flex justify-content-center align-items-center"></i>
+                                    <a href="mailto:mabutalha468@gmail.com">mabutalha468@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="Subscription mt-5 mt-lg-0">
+                            <h3 class="footer-title text-white">Subscription</h3>
+                            <p>Join our subscribers list to get the latest news and special offers.</p>
+                            <form>
+                                <input class="d-block w-100 text-white" type="email" placeholder="Your email" />
+                                <button class="text-white text-uppercase border-0 mt-2" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Copyright">
+                <p class="mb-0 text-center text-white-50">&copy; Copyright 2024 Restan. All Rights Reserved by Restan.</p>
+            </div>
+        </footer>
+
+        <!-- Footer End  -->
+
+        <!-- Cart Modal Start  -->
+
+        <div class="modal food-cart-modal fade" id="foodModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="text-center pt-2 pb-4">Your Cart Items</h2>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Image</th>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Total</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cart_item_table">
+                                   <!-- keep this empty -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="total-count">
+                            <strong id="total-count-element" class="h2 d-block text-end text-dark">Total Amount: $27.00</strong>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Modal End  -->
+
+        <!-- Script -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>
